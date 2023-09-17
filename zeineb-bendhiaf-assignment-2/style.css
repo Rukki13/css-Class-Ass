@@ -1,0 +1,114 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: black;
+}
+#lelo {
+  /*div for the body part*/
+  padding: 10px;
+  margin: 30px;
+  background-color: rgb(210, 201, 202);
+}
+
+#lila {
+  /*id for the h1 booking travel agency*/
+  text-align: center;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#bigflo {
+  /*menu */
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(51, 51, 51);
+  justify-content: center;
+}
+
+#bigflo li {
+  display: flex;
+  border-right: 1px solid grey;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.et {
+  /* each part of the menu list*/
+  color: white;
+  text-decoration: none;
+}
+.t1 th {
+  background-color: #d29f9f;
+  color: white;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid #d29f9f;
+  border-right: 0.5px solid white; /*you asked us without border but in the picture there is a border so i added this to match the picture */
+  border-bottom: 0.5px solid white;
+  border-left: 0.5px solid grey;
+  border-top: 0.5px solid grey;
+}
+table {
+  /*places table*/
+  width: 100%;
+}
+
+.t1 td {
+  border-right: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+  border-left: 0.5px solid grey;
+  border-top: 0.5px solid grey;
+  height: 50px;
+  margin: 10px;
+}
+.t1 tbody td:hover {
+  /*to make the table interactive ehh somehow*/
+  background-color: #f5f5f5;
+}
+#td1 {
+  /*to align the Our hotels text , ig there are easier ways*/
+  border: 0;
+  text-align: center;
+}
+#contact {
+  text-align: left;
+}
+
+.everything {
+  /*flex box for the form and map section to make them sit next to each other*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#n {
+  /*id for the div section of the map table*/
+  margin-right: 50px;
+}
+
+#submit {
+  border: 0;
+  padding: 8px 16px;
+}
+#reset {
+  border: 0;
+  padding: 8px 16px;
+}
+
+#Booking ol {
+  counter-reset: section;
+}
+#Booking ol li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+#Booking ol li::before {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+}
+
+#Booking a:hover,#Booking a:active {
+  color: purple; }
